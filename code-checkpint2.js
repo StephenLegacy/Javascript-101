@@ -1,6 +1,6 @@
 // String Manipulation Functions
 
-// Reverse a String
+// Reversing a String
 function reverseString(str) {
     return str.split('').reverse().join('');
 }
@@ -38,13 +38,13 @@ function filterArray(arr, condition) {
 
 // Mathematical Functions
 
-// Factorial
+// Factorial of number
 function factorial(n) {
     if (n === 0 || n === 1) return 1;
     return n * factorial(n - 1);
 }
 
-// Prime Number Check
+// Prime Number Checking
 function isPrime(num) {
     if (num < 2) return false;
     for (let i = 2; i <= Math.sqrt(num); i++) {
@@ -62,7 +62,6 @@ function fibonacci(n) {
     return sequence.slice(0, n);
 }
 
-// Example usage
 console.log(reverseString("hello"));
 console.log(countCharacters("hello world"));
 console.log(capitalizeWords("hello world"));
